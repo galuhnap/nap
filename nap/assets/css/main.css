@@ -1,0 +1,425 @@
+body {
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+}
+img{
+  max-width: 100%;
+}
+p{
+  line-height: 32px;
+}
+.menu {
+  font-size: 14px;
+}
+.menu.active {
+  color: #009E6C;
+}
+
+.nap-navbar {
+  background: #16161D;
+  height: 64px;
+  padding: 0 140px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nap-hamburger-section{
+  background: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 5rem 1rem 1rem;
+  color: white;
+  display: none;
+}
+.nap-hamburger-section ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 28px;
+  font-weight: 600;
+}
+.nap-hamburger-section ul li{
+  margin-bottom: 1rem;
+}
+.nap-hamburger-section.active{
+  display: flex;
+  align-items: center;
+}
+.nap-navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nap-navbar-left {
+  flex: 1;
+  max-width: 150px;
+}
+
+.nap-navbar-center {
+  flex: 1;
+  text-align: center;
+  max-width: fit-content;
+}
+
+.nap-navbar-right {
+  flex: 1;
+  text-align: right;
+  max-width: 150px;
+}
+
+.nap-navbar-center .menu {
+  display: inline-block;
+}
+
+.nap-navbar-center .menu:not(:last-child) {
+  margin-right: 48px;
+}
+
+.nap-navbar-right .socmed:not(:last-child) {
+  margin-right: 24px;
+}
+
+.nap-navbar-right .socmed img {
+  height: 24px;
+  filter: grayscale(1);
+  transition: all .3s;;
+}
+.nap-navbar-right .socmed img:hover {
+  filter: grayscale(0);
+  transition: all .3s;;
+}
+
+.nap-section {
+  min-height: calc(100vh - 64px);
+}
+
+.nap-img-section {
+  max-height: 480px;
+}
+
+.nap-img-arrow {
+  margin-left: 16px;
+}
+
+.nap-center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.nap-center-vertical-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nap-center-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nap-center-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #009E6C;
+}
+
+.btn-primary {
+  background-color: #F34573 !important;
+  border-color: #F34573 !important;
+  border-radius: 4px;
+  width: 360px;
+  height: 64px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-title{
+  color:#F34573 !important;
+}
+.footer-description{
+  max-width: 540px;
+  text-align: center;
+  margin: 30px 0px 60px;
+}
+.nap-heading-1{
+  color: #009E6C;
+  font-size: 48px;
+  font-weight: 600;
+}
+.card-article{
+  margin-bottom: 64px;
+}
+.card-article img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+img.nap-rounded{
+  border-radius: 4px;
+}
+.card-article-title{
+  font-size: 16px;
+  font-weight: 600;
+  color: #031013;
+  margin-top: 10px;
+}
+.row.section-playground div{
+  padding: 12px;
+}
+.podcast-title{
+  font-size: 36px;
+  color: #031013;
+  font-weight: 600;
+}
+.podcast-description{
+  font-size: 16px;
+  color: #031013;
+  position: relative;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+.podcast-description::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 85px;
+  height: 1px;
+  background: #009E6C;
+  bottom: -20px;
+}
+.podcast-label{
+  font-weight: 600;
+  font-size: 18px;
+}
+.podast-detail{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-title{
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.experience-title{
+  font-size: 24px;
+}
+.experience-job-title{
+  font-weight: 600;
+  font-size: 36px;
+}
+.experience-sub-title{
+  font-weight: 500;
+  font-size: 32px;
+}
+.row.section-design-process{
+  margin: -40px -40px 0px;
+}
+.row.section-design-process >div{
+  padding: 40px 40px 0px;
+}
+.nap-profile{
+  display: flex;
+  margin-top: 50px;
+}
+.nap-profile-image{
+  position: relative;
+  margin-right: 18px;
+}
+.nap-profile-image img{
+  max-height: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #F34573;
+  display: block;
+}
+.nap-profile-image::after{
+  content: "";
+  background: linear-gradient(152.49deg, #33B1A9 -24.66%, #009E6C 100.73%), #009E6C;
+  border: 0.5px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+}
+.nap-profile-name{
+  font-weight: 600;
+  font-size: 14px;
+  color: #031013;
+}
+.nap-profile-status{
+  font-size: 12px;
+  color: #828282;
+}
+.copyright{
+  margin-top: 30px;
+}
+.copyright b{
+  font-weight: 600 !important;
+}
+.footer-socmed{
+  list-style: none;
+  padding: 0;
+  margin: 60px 0px;
+  display: flex;
+}
+.footer-socmed li{
+  margin: 0px 18px; 
+}
+.footer-socmed li a{
+  line-height: 0;
+  border-radius: 6px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+}
+.footer-socmed li a:hover{
+  background: rgba(255, 255, 255, 0.15);
+  transition: all .3s;
+}
+.nap-podcast-tab{
+  padding: 20px 0px;
+  border-top: 1px solid #F3F3F4;
+  border-bottom: 1px solid #F3F3F4;
+  text-align: center;
+}
+.nap-podcast-tab .btn:focus{
+  box-shadow: none;
+}
+.nap-podcast-tab .btn{
+  font-size: 16px;
+  font-weight: 600;
+  opacity: .5;
+  transition: all .3s;
+}
+.nap-podcast-tab .btn:hover,
+.nap-podcast-tab .btn.active{
+  opacity: 1;
+  background: #efefef;
+  transition: all .3s;
+}
+.nap-hamburger{
+  display: none;
+}
+.nap-hamburger  i{
+  transition: all .3s;
+}
+.caption{
+  margin-bottom: 2rem;
+}
+.nap-hamburger  i{
+  background: white;
+  height: 2px;
+  width: 30px;
+  display: block;
+  margin: 7px 0px;
+}
+.nap-hamburger.active{
+  position: relative;
+  display: flex;
+}
+.nap-hamburger.active i:nth-child(2){
+  opacity: 0;
+}
+.nap-hamburger.active i:first-child{
+  transform: rotate(-45deg);
+  position: absolute;
+  transition: all .3s;
+}
+.nap-hamburger.active i:last-child{
+  transform: rotate(45deg);
+  position: absolute;
+  transition: all .3s;
+}
+.logo-company{
+  height: 67px;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px){
+  .nap-navbar{
+    padding: 0px;
+  }
+  .nap-navbar-center, .nap-navbar-right{
+    display: none;
+  }
+  .nap-hamburger{
+    display: block;
+  }
+  .caption{
+    font-size: 24px;
+    margin: 4rem 0px;
+  }
+  .caption-home-page{
+    font-size: 2.5rem;
+    margin: 7rem 0 0;
+    line-height: 1.4;
+  }
+  .nap-img-section{
+    max-height: 240px;
+    margin: 3rem auto !important;
+    margin: auto;
+  }
+  .nap-img-section.profile-image{
+    max-height: 240px;
+    margin: auto;
+  }
+  .nap-home-page{
+    height: 110vh;
+  }
+  footer{
+    padding: 1rem;
+    text-align: center;
+  }
+  footer .copyright{
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .footer-socmed{
+    margin: 40px 0px;
+  }
+  footer button{
+    max-width: 100%;
+  }
+  .footer-title{
+    font-size: 36px;
+    margin: 3rem 0;
+  }
+  .nap-heading-1{
+    font-size: 32px;
+  }
+  .card-article{
+    margin-bottom: 32px;
+  }
+}
